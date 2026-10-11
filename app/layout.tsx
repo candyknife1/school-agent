@@ -12,6 +12,7 @@ import { AgentRegistryInit } from '@/components/agent-registry-init';
 import { ModelSettingsInit } from '@/components/model-settings-init';
 import { StorageHealthNotice } from '@/components/storage-health-notice';
 import { AccessCodeGuard } from '@/components/access-code-guard';
+import { WorkspaceHeader } from '@/components/school/workspace-header';
 import { ProSwapWatcher } from '@/components/workbench/ProSwapWatcher';
 
 // The UI font is loaded from @fontsource's stylesheet rather than next/font,
@@ -39,9 +40,8 @@ import '@fontsource-variable/inter';
 const THEME_INIT_SCRIPT = `try{var t=localStorage.getItem('theme');if(t==='dark'||(t!=='light'&&matchMedia('(prefers-color-scheme: dark)').matches))document.documentElement.classList.add('dark')}catch(e){}`;
 
 export const metadata: Metadata = {
-  title: 'OpenMAIC',
-  description:
-    'The open-source AI interactive classroom. Upload a PDF to instantly generate an immersive, multi-agent learning experience.',
+  title: 'school-agent · 课程空间',
+  description: '小学智能教学平台：互动课程、教师工作流、知识库与使用反馈。',
 };
 
 export default function RootLayout({
@@ -63,7 +63,10 @@ export default function RootLayout({
             <ModelSettingsInit />
             <AgentRegistryInit />
             <ProSwapWatcher />
-            <AccessCodeGuard>{children}</AccessCodeGuard>
+            <AccessCodeGuard>
+              <WorkspaceHeader />
+              {children}
+            </AccessCodeGuard>
             <Toaster position="top-center" />
             {/* After the Toaster: this one raises a toast on mount when
                 persistence is already broken, and a toast raised before its

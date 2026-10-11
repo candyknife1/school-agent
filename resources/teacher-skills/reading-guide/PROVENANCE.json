@@ -1,0 +1,33 @@
+{
+  "commit": "4dab66e37625d4b32cec4c89721182e530948538",
+  "archive": "（技能安装包4）_学科专项教学/阅读教学顾问/reading-teaching-arnold.zip",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "f661ac841978de23dfba1d122937c449f0b039685135bae012778cdf37469f7a",
+      "bytes": 12107
+    },
+    {
+      "path": "references/chapters.md",
+      "sha256": "5852491286e46417d1e25e36e36629dbddb65c83052b8480e3b048dc0fe69353",
+      "bytes": 10621
+    },
+    {
+      "path": "references/cheatsheet.md",
+      "sha256": "0f3779eadfc854ef398d9fb55147959ef3d3a6f9eec8a31b6b6446d775a282ae",
+      "bytes": 2331
+    },
+    {
+      "path": "references/glossary.md",
+      "sha256": "912a15ba62ae894ca2701fce2732f38bbe05b43e993bdc4a53cd6abd3d85a579",
+      "bytes": 3265
+    },
+    {
+      "path": "references/patterns.md",
+      "sha256": "fe84b6a532358f5abf48d95dfd082cb7dc39f09edb1cce717f6e63db3ea74127",
+      "bytes": 5255
+    }
+  ],
+  "repository": "https://github.com/Wenmao-AI-Lab/primary-teacher-skill",
+  "upstreamName": "reading-teaching-arnold"
+}

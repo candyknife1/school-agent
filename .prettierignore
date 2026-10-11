@@ -29,3 +29,6 @@ out/
 
 # SVG arc helper (vendored declaration)
 lib/export/svg-arc-to-cubic-bezier.d.ts
+
+# Preserve upstream Skill files byte-for-byte
+resources/teacher-skills/

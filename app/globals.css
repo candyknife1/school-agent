@@ -576,3 +576,66 @@ body[data-maic-editor='true'] .editable-element-text li,
     -webkit-text-fill-color: var(--muted-foreground);
   }
 }
+
+/* Peer workspaces share a persistent header; only incoming content moves. */
+@keyframes school-workspace-enter {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.school-workspace-enter {
+  animation: school-workspace-enter 220ms ease-out both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .school-workspace-enter {
+    animation: none;
+  }
+}
+
+/* Existing teacher tools use a light slate palette; align them with the shell's theme. */
+.dark .school-teacher-workspace {
+  color: #e2e8f0;
+}
+.dark .school-teacher-workspace .bg-white {
+  background-color: #0f172a;
+}
+.dark .school-teacher-workspace .bg-slate-50 {
+  background-color: #1e293b;
+}
+.dark .school-teacher-workspace .bg-indigo-50 {
+  background-color: #1e1b4b;
+}
+.dark .school-teacher-workspace .bg-indigo-100 {
+  background-color: #312e81;
+}
+.dark .school-teacher-workspace .border-slate-200 {
+  border-color: #334155;
+}
+.dark .school-teacher-workspace .border-indigo-100,
+.dark .school-teacher-workspace .ring-indigo-200 {
+  --tw-ring-color: #4338ca;
+  border-color: #3730a3;
+}
+.dark .school-teacher-workspace .text-slate-800,
+.dark .school-teacher-workspace .text-slate-700 {
+  color: #e2e8f0;
+}
+.dark .school-teacher-workspace .text-slate-600,
+.dark .school-teacher-workspace .text-slate-500 {
+  color: #94a3b8;
+}
+.dark .school-teacher-workspace .text-indigo-700,
+.dark .school-teacher-workspace .text-indigo-600 {
+  color: #a5b4fc;
+}
+.dark .school-teacher-workspace section.bg-gradient-to-br {
+  background-image: linear-gradient(to bottom right, #1e1b4b, #0f172a, #082f49);
+}
+.dark .school-teacher-workspace .bg-white\/80 {
+  background-color: #0f172acc;
+}

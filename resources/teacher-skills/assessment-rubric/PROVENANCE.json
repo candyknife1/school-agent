@@ -1,0 +1,138 @@
+{
+  "commit": "4dab66e37625d4b32cec4c89721182e530948538",
+  "archive": "（技能安装包5）_作业布置与批改测评/作业批改量规/作业批改量规.zip",
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "8755221656d4901a15327506f985adf2b4b5831baec278661cb10c125092be3b",
+      "bytes": 1068
+    },
+    {
+      "path": "README.md",
+      "sha256": "c33c6c76188a4776227c7474436e9c0c1de4258059d17f9fe1106927d4bdce3a",
+      "bytes": 11292
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "26b2cf096b3a872e263442b214eea4e9f53d8f08193a7273a6fbcca3e0ea0260",
+      "bytes": 26339
+    },
+    {
+      "path": "examples/README.md",
+      "sha256": "eaf63dbe341ea537523b793c69f6b2a70e1f26289cad84816e0418f662c9d37e",
+      "bytes": 1752
+    },
+    {
+      "path": "examples/marketing-plan-rubric.yaml",
+      "sha256": "7f0468404d5f7cd9cf60fe689366ad85afc6116a2935f8c0bd1e43f71578bcc2",
+      "bytes": 3958
+    },
+    {
+      "path": "examples/research-paper-rubric.yaml",
+      "sha256": "176e0cbdc8c8a13968a858bbf9a181343da5e0b90bc0b618aa20e484c457cc86",
+      "bytes": 4515
+    },
+    {
+      "path": "examples/technical-report-rubric.yaml",
+      "sha256": "44d6de1aafd3abc56daf5b05e59e92a36a7bbdcd14f117ebab1a30bdb093e23a",
+      "bytes": 4418
+    },
+    {
+      "path": "examples/video-project-rubric.yaml",
+      "sha256": "dca0dad0a5ed33a81e2173341b243b7d4aba42482acddef034fb253c684ef6d2",
+      "bytes": 4109
+    },
+    {
+      "path": "references/batch-processing-guide.md",
+      "sha256": "7e4220b89c52466e73f6532f724460fb1f556b43c4b69774e82e7b70f980b174",
+      "bytes": 9925
+    },
+    {
+      "path": "references/bias-mitigation.md",
+      "sha256": "718c9e398f033be0d5e9b2a36fc936d19005ef74e7b6090d5eea1bf413170373",
+      "bytes": 13404
+    },
+    {
+      "path": "references/evaluation-methodology.md",
+      "sha256": "2a785892e832af0eeb6e71361092d769ebac9840c37b695006dfb2cf4c35081c",
+      "bytes": 30279
+    },
+    {
+      "path": "references/multimodal-pipeline.md",
+      "sha256": "0b5ac778791de9be4df9f853090c75618bd329b23a44879846ef1635b6140410",
+      "bytes": 10579
+    },
+    {
+      "path": "references/quality-control-framework.md",
+      "sha256": "0ffc656963debea7595934964d57987d69ee7b66288739ef8a8fda6c75655d24",
+      "bytes": 11499
+    },
+    {
+      "path": "scripts/batch_score.py",
+      "sha256": "caa767c90270628be6572764dc9f637bbe415324eb7de1ea4e3b71c319795e1f",
+      "bytes": 53556
+    },
+    {
+      "path": "scripts/calibrate.py",
+      "sha256": "ca537aa8c32d7b71f150a9cba45e6647ad4119bb442664124a55f762174d7245",
+      "bytes": 16577
+    },
+    {
+      "path": "scripts/export_excel.py",
+      "sha256": "a293eb845c0665f34db288708c0700fb8d64d848f729baab60d38b7801b77792",
+      "bytes": 15692
+    },
+    {
+      "path": "scripts/preprocess.py",
+      "sha256": "99d91bf7477370a09bd0a214fb1c362e38195ae3ea521cdca59effbf6e66ed6b",
+      "bytes": 31727
+    },
+    {
+      "path": "scripts/requirements.txt",
+      "sha256": "52e0661c5c1013bc8e7e8ef6075fe6f4fc1f33c62bae01e03bfcf5deed8c29f9",
+      "bytes": 833
+    },
+    {
+      "path": "scripts/stats.py",
+      "sha256": "0a5842a5d73c5c1f08378e2f92edc3850838a546b72633cbcb4c154ba429e2ef",
+      "bytes": 18585
+    },
+    {
+      "path": "templates/calibration-report.md",
+      "sha256": "ecc2d0b31f5505183c848567d4f703580ea06ec1fa6fb456c529a193f8b10aaa",
+      "bytes": 3226
+    },
+    {
+      "path": "templates/comment-generation-prompt.md",
+      "sha256": "b946718abdf9f91728e6633bffeb77c3e4b56575d9dd117c60fddf282f985766",
+      "bytes": 3234
+    },
+    {
+      "path": "templates/gate-check-prompt.md",
+      "sha256": "32dba3c7965c40922439626cfe70f6d17fd89995ac2c1d3b3ac48f3d4794624a",
+      "bytes": 3959
+    },
+    {
+      "path": "templates/ir-schema.json",
+      "sha256": "dfaf1da5a14ef1f8414e940d38d7349dda2dcff3c10c2f71346ce011187e45fb",
+      "bytes": 6125
+    },
+    {
+      "path": "templates/rubric.yaml.tmpl",
+      "sha256": "9138499f40012da4389e57441435cfcd0238b7e9fcb924698a0118ea731eb68d",
+      "bytes": 4256
+    },
+    {
+      "path": "templates/scoring-output-schema.json",
+      "sha256": "984b0a77898ead7d91e2a7c859420afab8de72cd522f67c2c23c4601e2c88a78",
+      "bytes": 5249
+    },
+    {
+      "path": "templates/scoring-prompt.md",
+      "sha256": "350e072dfb3db48d6e10519bc33a96697426d63ddbf927e9a469e48f19f3c062",
+      "bytes": 4184
+    }
+  ],
+  "repository": "https://github.com/Wenmao-AI-Lab/primary-teacher-skill",
+  "upstreamName": "作业批改量规"
+}

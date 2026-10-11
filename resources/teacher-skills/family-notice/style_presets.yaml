@@ -1,0 +1,50 @@
+styles:
+  formal:
+    name: "正式规范型"
+    max_chars: 220
+    tone: "准确、完整、规范"
+    avoid:
+      - "过度口语化"
+      - "夸张表达"
+      - "未经确认的政策承诺"
+
+  warm:
+    name: "温和提醒型"
+    max_chars: 160
+    tone: "亲切、清楚、尊重家长"
+    avoid:
+      - "命令式语气"
+      - "制造压力"
+
+  brief:
+    name: "简短高效型"
+    max_chars: 120
+    tone: "简短、直接、便于群发"
+    avoid:
+      - "长篇背景"
+      - "重复解释"
+
+  encouraging:
+    name: "亲切鼓励型"
+    max_chars: 180
+    tone: "积极、鼓励、温暖"
+    avoid:
+      - "空泛鸡汤"
+      - "过度夸奖"
+
+  safety:
+    name: "郑重安全型"
+    max_chars: 180
+    tone: "严谨、明确、提醒到位"
+    avoid:
+      - "恐吓"
+      - "严重后果自负"
+      - "夸大风险"
+
+  low_interrupt:
+    name: "低打扰型"
+    max_chars: 120
+    tone: "礼貌、简洁、降低打扰感"
+    avoid:
+      - "重复提醒"
+      - "过度强调"

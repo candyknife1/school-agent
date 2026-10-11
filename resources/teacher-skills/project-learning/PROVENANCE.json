@@ -1,0 +1,73 @@
+{
+  "commit": "4dab66e37625d4b32cec4c89721182e530948538",
+  "archive": "（技能安装包1）_课程标准与教学设计/PBL项目式学习/pbl-designer.zip",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "c939ed8768bb6654d690429e4292bc45be975edfc2a93287eee2e4f9e5f7835b",
+      "bytes": 38355
+    },
+    {
+      "path": "assets/feedback-form-template.md",
+      "sha256": "ed8e3195761cac2852e4d0ac1d90062ef868953698265c0c0c867eb706e5fafd",
+      "bytes": 4118
+    },
+    {
+      "path": "assets/pbl-plan-template.md",
+      "sha256": "bad12b0a47787c09157fb449fc429a75abf59d8552c9cacbcce1d5f6e2073d05",
+      "bytes": 3355
+    },
+    {
+      "path": "assets/project-milestone-template.md",
+      "sha256": "80b0b54a3c4371cf2f72d86f9470f48fa506dd724ce77c334c2c89b73151697d",
+      "bytes": 2712
+    },
+    {
+      "path": "assets/student-handbook-template.md",
+      "sha256": "d8a9d7866edb9f39c47c8958383d528aa4b0b59982d8e636c1ca2c64f8d9ab9b",
+      "bytes": 1481
+    },
+    {
+      "path": "references/assessment-rubrics.md",
+      "sha256": "d7d94ebb903153bf14c81d0a53ca0764e8ecfc43c60381431baf25def1960e89",
+      "bytes": 4131
+    },
+    {
+      "path": "references/common-failure-cases.md",
+      "sha256": "f951cdd1a60ece6d12ca64f32756242f0355a347c839522b6f1fb40954afb4a9",
+      "bytes": 6664
+    },
+    {
+      "path": "references/driving-questions-guide.md",
+      "sha256": "ba0629d995640705bdf5b791f459a24a3cd8388f308ca3977796c934b9a3a799",
+      "bytes": 6466
+    },
+    {
+      "path": "references/evaluation-design.md",
+      "sha256": "42e26a5be66856bac4cc9cc5c7799b2c906f9c386870f1fd7fe90c875da6a6ce",
+      "bytes": 6818
+    },
+    {
+      "path": "references/optional-scaffolds.md",
+      "sha256": "c53010f2bfcc026a53d37b79cab5e7f16476d7949eb2030fbcb786ddfa553bef",
+      "bytes": 2023
+    },
+    {
+      "path": "references/pbl-core-knowledge.md",
+      "sha256": "22f120bbf5f25252da3905b24f171e86bb680985a6dcbd6080bfefeb34a7317e",
+      "bytes": 10879
+    },
+    {
+      "path": "references/pbl-design-template.md",
+      "sha256": "386a978b36e316c2879718225eaabed78f4be1aacff13527d44e171a5559a473",
+      "bytes": 1475
+    },
+    {
+      "path": "references/scaffold-design-guide.md",
+      "sha256": "b9f8ac502c544e03d2cfbe6319bc9497ae65024330c74696e584a8f9fec334e7",
+      "bytes": 8232
+    }
+  ],
+  "repository": "https://github.com/Wenmao-AI-Lab/primary-teacher-skill",
+  "upstreamName": "pbl-designer"
+}

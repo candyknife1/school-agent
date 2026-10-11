@@ -11,3 +11,7 @@
 # `exec /usr/local/bin/docker-entrypoint.sh: no such file or directory` —
 # a message that points at the script rather than at the interpreter.
 *.sh text eol=lf
+
+# Vendored Skill sources are verified against original archive SHA-256 values.
+# Preserve their bytes and intentional upstream template trailing spaces.
+resources/teacher-skills/** -text whitespace=-blank-at-eol

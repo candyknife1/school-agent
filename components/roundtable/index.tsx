@@ -1,5 +1,7 @@
 'use client';
 
+import { PromptOptimizer } from '@/components/prompt-optimizer';
+
 import { useState, useRef, useCallback, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import {
@@ -831,7 +833,7 @@ export function Roundtable({
                 className="w-[min(480px,calc(100vw-3rem))] pointer-events-auto"
               >
                 <div className="flex items-center gap-3 bg-white/70 dark:bg-black/60 backdrop-blur-xl rounded-full px-4 py-2 shadow-[0_8px_32px_rgba(0,0,0,0.08)] dark:shadow-[0_8px_32px_rgba(0,0,0,0.4)] border border-gray-200/60 dark:border-white/10">
-                  <div className="flex-1 min-w-0 flex items-center">
+                  <div className="flex-1 min-w-0 flex flex-col items-stretch">
                     <textarea
                       value={inputValue}
                       onChange={(e) => setInputValue(e.target.value)}
@@ -848,6 +850,16 @@ export function Roundtable({
                       rows={1}
                       className="w-full resize-none bg-transparent border-none focus:ring-0 focus:outline-none outline-none shadow-none ring-0 text-gray-900 dark:text-white text-sm placeholder:text-gray-400 dark:placeholder:text-gray-400 py-0 leading-[40px] max-h-[80px]"
                       style={{ fieldSizing: 'content' } as Record<string, string>}
+                    />
+                    <PromptOptimizer
+                      key={`${currentSceneIndex}:${sessionType}`}
+                      value={inputValue}
+                      onChange={(value) => {
+                        onUserInputActivity?.('text_input');
+                        setInputValue(value);
+                      }}
+                      context="classroom"
+                      disabled={isSendCooldown}
                     />
                   </div>
                   <button
@@ -1373,6 +1385,16 @@ export function Roundtable({
                         autoFocus
                         rows={1}
                         className="w-full resize-none overflow-y-auto bg-transparent border-none focus:ring-0 focus:outline-none outline-none shadow-none ring-0 text-gray-700 dark:text-gray-200 text-sm placeholder:text-gray-400 dark:placeholder:text-gray-500 min-h-[40px] max-h-[100px]"
+                      />
+                      <PromptOptimizer
+                        key={`${currentSceneIndex}:${sessionType}`}
+                        value={inputValue}
+                        onChange={(value) => {
+                          onUserInputActivity?.('text_input');
+                          setInputValue(value);
+                        }}
+                        context="classroom"
+                        disabled={isSendCooldown}
                       />
                     </div>
                     <button

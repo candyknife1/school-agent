@@ -1,0 +1,13 @@
+school_name: ""
+grade_class: ""
+student_addressing: "同学"
+parent_addressing: "各位家长"
+signature_text: ""
+include_signature: false
+default_tone: "温和"
+common_locations:
+  - ""
+time_style: ""
+special_notes:
+  - ""
+privacy_notice_enabled: true

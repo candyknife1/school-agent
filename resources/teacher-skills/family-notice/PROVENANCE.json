@@ -1,0 +1,108 @@
+{
+  "commit": "4dab66e37625d4b32cec4c89721182e530948538",
+  "archive": "（技能安装包7）_家校沟通与通知/家校通知生成/home-school-notice-optimizer.zip",
+  "files": [
+    {
+      "path": "CHANGELOG.md",
+      "sha256": "5000f92f199f27542ba134443b3c37b1d580d5e6b37b56b6785d376ab9a26101",
+      "bytes": 357
+    },
+    {
+      "path": "README.en.md",
+      "sha256": "62e2bbd178c1ec52624bbfcefcaea11bf1dca7f325a2097aa5a19c57515b643f",
+      "bytes": 6406
+    },
+    {
+      "path": "README.md",
+      "sha256": "21b1ce89f9b94a3734b9a0d8e863b354fb6926c4d3d56ccb5fb8c52756014df0",
+      "bytes": 6256
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "7a8cbea983f146350b1659b5aa878c1a2fcbb2ff3e27c7bc05f9354685e35b39",
+      "bytes": 9251
+    },
+    {
+      "path": "examples/example-activity-notice.md",
+      "sha256": "4405cd3198e44646ad38a8927517ee7c7b936e4ca5344c48f76579af0f68a790",
+      "bytes": 965
+    },
+    {
+      "path": "examples/example-anti-drowning-reminder.md",
+      "sha256": "ca3703bdca83970903d1b463f5d284a1a49f5817d1acb414c9b7af37a13e6a20",
+      "bytes": 920
+    },
+    {
+      "path": "examples/example-parent-meeting-notice.md",
+      "sha256": "d58e6d648f99e5ac23103255566bba2fa421952f9c16b06651c5e6b1de2ca829",
+      "bytes": 900
+    },
+    {
+      "path": "examples/example-style-selector.md",
+      "sha256": "22ed2fca8d8eff30c690473dc5583530a447559c766c8108cc7444d16c1c6086",
+      "bytes": 884
+    },
+    {
+      "path": "references/memory-strategy.md",
+      "sha256": "a5eb489a609c9db63275295954af404bdb2cc744a9cfb323345f7eb155d8a79a",
+      "bytes": 684
+    },
+    {
+      "path": "references/output-rules.md",
+      "sha256": "0fca4bae418320aed6e8fd06368098ab4ce027a2cf81d80884a561a0ddcc79bb",
+      "bytes": 729
+    },
+    {
+      "path": "references/privacy-and-safety-rules.md",
+      "sha256": "1d5424438715bf6e1b9523fecb7348d758d5ae0af902487e43d6a3a82d1e3ae8",
+      "bytes": 973
+    },
+    {
+      "path": "safety_snippets.yaml",
+      "sha256": "26b09cdb6c3ef90285b599d98ae3a065e129ac8a7280e99f976a412c920b34f9",
+      "bytes": 15705
+    },
+    {
+      "path": "style_presets.yaml",
+      "sha256": "698ad9da8f992a884f4dd293671093b829137c43fd44f6900e1035bce7e853da",
+      "bytes": 1019
+    },
+    {
+      "path": "templates/info-card-template.md",
+      "sha256": "e3300ec9bb8f9a24be2bd83499f830a3cdca05bcb831b643de1738f9b5f9a8ea",
+      "bytes": 378
+    },
+    {
+      "path": "templates/input-template.md",
+      "sha256": "fcaed45766d648f956636f4c62300ae2d3d091b183fb26e0da2d4cb8cbd2c116",
+      "bytes": 663
+    },
+    {
+      "path": "templates/output-template.md",
+      "sha256": "5dada21a73c307f02b58660d1faef764d0aed83c22014721f8780075a62dadfc",
+      "bytes": 428
+    },
+    {
+      "path": "tests/expected_output_checklist.md",
+      "sha256": "99f4fd8b4a0d6200cb8f1c06dd469a46f88bb9235d0e17032e7d41780a0e128d",
+      "bytes": 684
+    },
+    {
+      "path": "tests/pre_publish_checklist.md",
+      "sha256": "51964b616fcee0e0ed456aa9d8cffe599d888df4703640d904a565e5b2de83e3",
+      "bytes": 1211
+    },
+    {
+      "path": "tests/sample_inputs.md",
+      "sha256": "1f4b539c3e3069b6ad5144a55a7678f8fb7965dd29cb52880006b0c7f1ad50d1",
+      "bytes": 873
+    },
+    {
+      "path": "user_profile.example.yaml",
+      "sha256": "6db9968ab29c4385609a1bde22d9b476f0af7641fc6e00207cb3c18de419afba",
+      "bytes": 253
+    }
+  ],
+  "repository": "https://github.com/Wenmao-AI-Lab/primary-teacher-skill",
+  "upstreamName": "home-school-notice-optimizer"
+}

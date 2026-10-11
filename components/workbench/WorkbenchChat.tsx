@@ -1,5 +1,7 @@
 'use client';
 
+import { PromptOptimizer } from '@/components/prompt-optimizer';
+
 /**
  * WorkbenchChat — the Pro workbench conversation, and (until the first page
  * lands) the whole surface.
@@ -977,6 +979,14 @@ export function WorkbenchChat({
                         : 'workbench.chat.continuePlaceholder',
                   )}
                   className={styles.composer.input}
+                />
+                <PromptOptimizer
+                  key={composerOwnerId ?? 'empty'}
+                  className="px-3 pb-12"
+                  value={draft}
+                  onChange={setDraft}
+                  context="workbench"
+                  disabled={busy || !canSend || openMenu !== null}
                 />
                 <div className={styles.composer.actionsLeft}>
                   {/* Three glyphs, three attachments for a message: a file, a

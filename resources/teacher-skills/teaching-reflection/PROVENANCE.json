@@ -1,0 +1,18 @@
+{
+  "commit": "4dab66e37625d4b32cec4c89721182e530948538",
+  "archive": "（技能安装包6）_教学复盘与教研提升/教学复盘报告/teaching-reflection.zip",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "73316d917b461802b1c496a87b1c41b47693813d0f05747b209a20a863093357",
+      "bytes": 1809
+    },
+    {
+      "path": "references/template.md",
+      "sha256": "0892bf340fd9ab3d96b3177a5f7aef736e2de88783ac1c6780aec34955835706",
+      "bytes": 162
+    }
+  ],
+  "repository": "https://github.com/Wenmao-AI-Lab/primary-teacher-skill",
+  "upstreamName": "teaching-reflection"
+}

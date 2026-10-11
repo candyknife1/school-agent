@@ -51,6 +51,8 @@ const nextConfig: NextConfig = {
     '@aws-sdk/s3-request-presigner',
   ],
   experimental: {
+    // Keep unused Node-only storage exports out of client barrel imports.
+    optimizePackageImports: ['@openmaic/storage'],
     proxyClientMaxBodySize: '200mb',
   },
   async headers() {

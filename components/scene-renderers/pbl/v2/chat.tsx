@@ -1,5 +1,7 @@
 'use client';
 
+import { PromptOptimizer } from '@/components/prompt-optimizer';
+
 /**
  * PBL v2 — Workspace chat panel.
  *
@@ -732,6 +734,14 @@ export function PBLV2Chat({
             <ArrowUp className="w-4 h-4" />
           </button>
         </div>
+        <PromptOptimizer
+          key={`${project.createdAt}:${activeAgentId ?? 'instructor'}`}
+          className="mt-2"
+          value={input}
+          onChange={setInput}
+          context="project"
+          disabled={chatBusy || projectCompleted || handoverPending}
+        />
         <p className="text-[10px] text-muted-foreground/80 text-center mt-2">
           {t('pbl.v2.chat.keyboardHint')}
         </p>

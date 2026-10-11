@@ -1,5 +1,7 @@
 'use client';
 
+import { PromptOptimizer } from '@/components/prompt-optimizer';
+
 import { useState, useEffect, useMemo, useRef, useDeferredValue } from 'react';
 import { useRouter } from 'next/navigation';
 import { motion, AnimatePresence } from 'motion/react';
@@ -16,10 +18,6 @@ import {
   Pencil,
   Trash2,
   Search,
-  Settings,
-  Sun,
-  Moon,
-  Monitor,
   ChevronUp,
   Upload,
   Sparkles,
@@ -29,7 +27,6 @@ import {
   Loader2,
 } from 'lucide-react';
 import { useI18n } from '@/lib/hooks/use-i18n';
-import { LanguageSwitcher } from '@/components/language-switcher';
 import { createLogger } from '@/lib/logger';
 import { Button } from '@/components/ui/button';
 import { InputGroup, InputGroupInput, InputGroupButton } from '@/components/ui/input-group';
@@ -38,7 +35,6 @@ import { cn } from '@/lib/utils';
 import { SettingsDialog } from '@/components/settings';
 import { GenerationToolbar } from '@/components/generation/generation-toolbar';
 import { AgentBar } from '@/components/agent/agent-bar';
-import { useTheme } from '@/lib/hooks/use-theme';
 import {
   courseGenerationUsable,
   requireModelCapabilities,
@@ -141,7 +137,6 @@ const initialFormState: FormState = {
 
 function HomePage() {
   const { t } = useI18n();
-  const { theme, setTheme } = useTheme();
   const router = useRouter();
   // Do not replay the classic hero's entrance after the route handoff already
   // carried the lockup and composer into place. The entrance is CSS, not a
@@ -223,7 +218,6 @@ function HomePage() {
     }
   }, []);
 
-  const [themeOpen, setThemeOpen] = useState(false);
   const [error, setError] = useState<string | null>(null);
   // True while the Generate click starts the run. Doubles as the guard flag
   // that freezes the course material set for the duration of the start and as
@@ -255,20 +249,7 @@ function HomePage() {
   const [createAndMoveTarget, setCreateAndMoveTarget] = useState<string | null>(null);
   const searchInputRef = useRef<HTMLInputElement>(null);
   const searchButtonRef = useRef<HTMLButtonElement>(null);
-  const toolbarRef = useRef<HTMLDivElement>(null);
   const textareaRef = useRef<HTMLTextAreaElement>(null);
-
-  // Close dropdowns when clicking outside
-  useEffect(() => {
-    if (!themeOpen) return;
-    const handleClickOutside = (e: MouseEvent) => {
-      if (toolbarRef.current && !toolbarRef.current.contains(e.target as Node)) {
-        setThemeOpen(false);
-      }
-    };
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
-  }, [themeOpen]);
 
   const loadClassrooms = async () => {
     try {
@@ -636,7 +617,7 @@ function HomePage() {
   };
 
   return (
-    <div className="min-h-[100dvh] w-full bg-gradient-to-b from-slate-50 to-slate-100 dark:from-slate-950 dark:to-slate-900 flex flex-col items-center p-4 pt-16 md:p-8 md:pt-16 overflow-x-hidden">
+    <div className="school-workspace-enter min-h-[calc(100dvh-76px)] w-full bg-gradient-to-b from-slate-50 to-slate-100 dark:from-slate-950 dark:to-slate-900 flex flex-col items-center p-4 pt-8 md:p-8 overflow-x-hidden">
       <input
         ref={fileInputRef}
         type="file"
@@ -653,88 +634,6 @@ function HomePage() {
           className="hidden"
         />
       )}
-      {/* ═══ Top-right pill (unchanged) ═══ */}
-      <div
-        ref={toolbarRef}
-        className="fixed top-4 right-4 z-50 flex items-center gap-1 bg-white/60 dark:bg-gray-800/60 backdrop-blur-md px-2 py-1.5 rounded-full border border-gray-100/50 dark:border-gray-700/50 shadow-sm"
-      >
-        {/* Language Selector */}
-        <LanguageSwitcher onOpen={() => setThemeOpen(false)} />
-
-        <div className="w-[1px] h-4 bg-gray-200 dark:bg-gray-700" />
-
-        {/* Theme Selector */}
-        <div className="relative">
-          <button
-            onClick={() => {
-              setThemeOpen(!themeOpen);
-            }}
-            className="p-2 rounded-full text-gray-400 dark:text-gray-500 hover:bg-white dark:hover:bg-gray-700 hover:text-gray-800 dark:hover:text-gray-200 hover:shadow-sm transition-all"
-          >
-            {theme === 'light' && <Sun className="w-4 h-4" />}
-            {theme === 'dark' && <Moon className="w-4 h-4" />}
-            {theme === 'system' && <Monitor className="w-4 h-4" />}
-          </button>
-          {themeOpen && (
-            <div className="absolute top-full mt-2 right-0 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-lg overflow-hidden z-50 min-w-[140px]">
-              <button
-                onClick={() => {
-                  setTheme('light');
-                  setThemeOpen(false);
-                }}
-                className={cn(
-                  'w-full px-4 py-2 text-left text-sm hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors flex items-center gap-2',
-                  theme === 'light' &&
-                    'bg-purple-50 dark:bg-purple-900/20 text-purple-600 dark:text-purple-400',
-                )}
-              >
-                <Sun className="w-4 h-4" />
-                {t('settings.themeOptions.light')}
-              </button>
-              <button
-                onClick={() => {
-                  setTheme('dark');
-                  setThemeOpen(false);
-                }}
-                className={cn(
-                  'w-full px-4 py-2 text-left text-sm hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors flex items-center gap-2',
-                  theme === 'dark' &&
-                    'bg-purple-50 dark:bg-purple-900/20 text-purple-600 dark:text-purple-400',
-                )}
-              >
-                <Moon className="w-4 h-4" />
-                {t('settings.themeOptions.dark')}
-              </button>
-              <button
-                onClick={() => {
-                  setTheme('system');
-                  setThemeOpen(false);
-                }}
-                className={cn(
-                  'w-full px-4 py-2 text-left text-sm hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors flex items-center gap-2',
-                  theme === 'system' &&
-                    'bg-purple-50 dark:bg-purple-900/20 text-purple-600 dark:text-purple-400',
-                )}
-              >
-                <Monitor className="w-4 h-4" />
-                {t('settings.themeOptions.system')}
-              </button>
-            </div>
-          )}
-        </div>
-
-        <div className="w-[1px] h-4 bg-gray-200 dark:bg-gray-700" />
-
-        {/* Settings Button */}
-        <div className="relative">
-          <button
-            onClick={() => setSettingsOpen(true)}
-            className="p-2 rounded-full text-gray-400 dark:text-gray-500 hover:bg-white dark:hover:bg-gray-700 hover:text-gray-800 dark:hover:text-gray-200 hover:shadow-sm transition-all group"
-          >
-            <Settings className="w-4 h-4 group-hover:rotate-90 transition-transform duration-500" />
-          </button>
-        </div>
-      </div>
       <SettingsDialog
         open={settingsOpen}
         onOpenChange={(open) => {
@@ -763,16 +662,19 @@ function HomePage() {
           heroEnter('fade-in slide-in-from-bottom-5 duration-600'),
         )}
       >
+        <h1 className="mb-4 text-sm font-medium tracking-widest text-indigo-600 dark:text-indigo-300">
+          课程空间 · 创建与开展互动课堂
+        </h1>
         {/* ── Logo ── */}
         <div className="relative" data-pro-morph="lockup">
-          <img
-            src="/logo-horizontal.png"
-            alt="OpenMAIC"
+          <h2
             className={cn(
-              'h-12 md:h-16 mb-2 -ml-2 md:-ml-3',
+              'mb-2 text-2xl font-semibold tracking-tight text-slate-800 dark:text-slate-100 md:text-4xl',
               heroEnter('fade-in zoom-in-90 duration-500 delay-100'),
             )}
-          />
+          >
+            把想法变成互动课堂
+          </h2>
           {workbenchEntryEnabled ? (
             <div
               className="absolute left-full top-0 ml-1.5 mt-[10px] md:ml-2 md:mt-[14px]"
@@ -816,6 +718,14 @@ function HomePage() {
               onChange={(e) => updateForm('requirement', e.target.value)}
               onKeyDown={handleKeyDown}
               rows={4}
+            />
+
+            <PromptOptimizer
+              className="px-3 pb-2"
+              value={form.requirement}
+              onChange={(value) => updateForm('requirement', value)}
+              context="course"
+              disabled={preparingGenerate}
             />
 
             {/* Toolbar row */}

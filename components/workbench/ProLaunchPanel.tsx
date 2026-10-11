@@ -1,5 +1,7 @@
 'use client';
 
+import { PromptOptimizer } from '@/components/prompt-optimizer';
+
 /**
  * The Pro launch face — the back of the homepage card.
  *
@@ -442,6 +444,15 @@ export function ProLaunchPanel({
               ? cn('px-5 pb-2', hasComposerExtras ? 'pt-2' : 'pt-[18px]')
               : cn('px-4 pb-4', hasComposerExtras ? 'pt-2' : 'pt-4'),
           )}
+        />
+
+        <PromptOptimizer
+          key={focusSignal}
+          className="px-4 pb-2"
+          value={prompt}
+          onChange={setPrompt}
+          context="course"
+          disabled={submitting || materials.busy || openMenu !== null}
         />
 
         <div

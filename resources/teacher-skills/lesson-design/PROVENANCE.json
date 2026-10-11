@@ -1,0 +1,148 @@
+{
+  "commit": "4dab66e37625d4b32cec4c89721182e530948538",
+  "archive": "（技能安装包1）_课程标准与教学设计/K12课时方案/k12-lesson-planning.zip",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "16c30c2a780aed2e72ed37ca01ce8330f09128d943666505c294254f90264701",
+      "bytes": 30430
+    },
+    {
+      "path": "references/china.md",
+      "sha256": "167733a5e8e65c0dc9af5145cb486147aaa2fcf957f4cf90282def638f8b8bf9",
+      "bytes": 6225
+    },
+    {
+      "path": "references/curriculum/arts.md",
+      "sha256": "c0a41725bdbcbced79090e38cb5f84288edbe530b568831ca2c04a2c5eb98938",
+      "bytes": 891
+    },
+    {
+      "path": "references/curriculum/biology.md",
+      "sha256": "8dd05d4dc3634dc81a4e3d64b28f33acd4d5cee0e37f37e56c6be77abedb95ab",
+      "bytes": 1220
+    },
+    {
+      "path": "references/curriculum/chemistry.md",
+      "sha256": "d20acde43d5526d6476bb7128e3eeb1e64a46dc4f79adab431f51f48026e1daf",
+      "bytes": 890
+    },
+    {
+      "path": "references/curriculum/english.md",
+      "sha256": "f661e483d52ad8fe1080e71a4ef0974bf50c5d605feb55a2c2406e799f139ccc",
+      "bytes": 1662
+    },
+    {
+      "path": "references/curriculum/geography.md",
+      "sha256": "bb9d0d4ced474f030f6caf1fc9eb041075d798a823791fa2e0ddb2a35edb24c6",
+      "bytes": 1426
+    },
+    {
+      "path": "references/curriculum/history.md",
+      "sha256": "815eb4a1b8ce1efdda0e9997a148773fe5664997ad5a7dbf787a527ae56bc56e",
+      "bytes": 1801
+    },
+    {
+      "path": "references/curriculum/index.md",
+      "sha256": "3112107d73e906445678356f152074cf90f1a44ae72f8c78ff80d0c1cdca7750",
+      "bytes": 2245
+    },
+    {
+      "path": "references/curriculum/it.md",
+      "sha256": "0b01f37f876342507fdb0bbf4364da6f509b6f3d4ada3b90052a38141e4f496e",
+      "bytes": 1082
+    },
+    {
+      "path": "references/curriculum/math.md",
+      "sha256": "f3b242591e41de0b356e19f96c110dca961b7af57dc1783f89433f52f17dd0a4",
+      "bytes": 3847
+    },
+    {
+      "path": "references/curriculum/morality-law.md",
+      "sha256": "ff2c9c00643df8361088acad968b7fca80e6383325b5daf2ae3712a3a2acce12",
+      "bytes": 1968
+    },
+    {
+      "path": "references/curriculum/pe.md",
+      "sha256": "c5c8e0fabedd4c3c26fbabbb6278100610f89eb64492af68eb49d003bc8ae048",
+      "bytes": 824
+    },
+    {
+      "path": "references/curriculum/physics.md",
+      "sha256": "39de9904e5066889155355659b0bd53382b49cd8bd611412e00772228ed0a1e0",
+      "bytes": 433
+    },
+    {
+      "path": "references/curriculum/science.md",
+      "sha256": "b6a261342aa1371c18aae9190afae1fdb450c7f4cce2ddfccf2ffdad3619c28a",
+      "bytes": 1464
+    },
+    {
+      "path": "references/curriculum/yuwen.md",
+      "sha256": "4184c3dfb275d3c22b2aa07753f812ec0715025d01521c5e013d7c5318c3d0b8",
+      "bytes": 6308
+    },
+    {
+      "path": "references/ela.md",
+      "sha256": "5d4b6c8c19c17a317edfec9fbd83ee56efb53f68f682e96565f8ae05a49e3e74",
+      "bytes": 15821
+    },
+    {
+      "path": "references/example_lesson.json",
+      "sha256": "10b55d351b77c7ca40c7b4d2b88a901797fbdacbda6f0a4f133c05acf70968dc",
+      "bytes": 11253
+    },
+    {
+      "path": "references/json_schema.md",
+      "sha256": "500c98e9351aa014700dad90993d7d572f15734b3a667ea83aefc348dcc92a12",
+      "bytes": 2127
+    },
+    {
+      "path": "references/math.md",
+      "sha256": "066fec18372284a95d2efd39402534e1642bdc572ab6f5f409e1497b18ce23bd",
+      "bytes": 9238
+    },
+    {
+      "path": "references/science.md",
+      "sha256": "a1e6dc598d5e9b3c60004736bfb8e7bd7e5db2c72e69854f93a46182c0ae37bb",
+      "bytes": 6489
+    },
+    {
+      "path": "references/social_studies.md",
+      "sha256": "4333b6251ad0852e86018496749369ff3a9cf8e00f0c551a5dc19b5c8b619edc",
+      "bytes": 7562
+    },
+    {
+      "path": "scripts/lesson_common.py",
+      "sha256": "de94d73fb4e3f016b1d1833573c4aedd4e3703ab8fa0d5f76ed5886dcf738ad3",
+      "bytes": 32973
+    },
+    {
+      "path": "scripts/render_all.sh",
+      "sha256": "ee9639e9b8ea0b1e089834ce0219d1a7e7e72abfe395ff9faf38bcde239d8be0",
+      "bytes": 2166
+    },
+    {
+      "path": "scripts/render_documents.py",
+      "sha256": "975db6c6be5494b8b9770ae932ae8aa3f2cdb1080984ebfce8a7de88e96ef68c",
+      "bytes": 4785
+    },
+    {
+      "path": "scripts/render_lesson_docx.py",
+      "sha256": "c789021585a8e289bcadf831037d844c3de09330290287cfc9cebc77b640c5be",
+      "bytes": 25150
+    },
+    {
+      "path": "scripts/render_lesson_html.py",
+      "sha256": "f23d496b78563ba9ae0446902534e240f4ac4c9ee051f596c157c96bcfb7527f",
+      "bytes": 16126
+    },
+    {
+      "path": "scripts/theme.css",
+      "sha256": "c0b36be4e3b6e70db4d3246642e10d950702255967d950d93bddcd0920659f50",
+      "bytes": 5326
+    }
+  ],
+  "repository": "https://github.com/Wenmao-AI-Lab/primary-teacher-skill",
+  "upstreamName": "k12-lesson-planning"
+}
